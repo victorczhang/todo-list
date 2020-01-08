@@ -1,0 +1,256 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 250px auto;
+    height: 100vh;
+}
+
+#sidebar {
+    background-color: rgba(231, 231, 231, 0.938);
+    border-right: 1px rgb(236, 236, 236) solid;
+}
+
+#content {
+    background-color: white;
+}
+
+#taskTableData {
+    /* background-color: orange; */
+    /* margin: 20px auto 0 auto; */
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+}
+
+table {
+    /* margin-top: 30px; */
+    border-collapse: collapse;
+    /* border-spacing: 30px 30px 10px 10px 10px; */
+    width: 90%;
+    table-layout: fixed;
+    text-align: left;
+    /* background: black; */
+    /* margin: 0 auto; */
+}
+
+#task-data {
+    margin: 0 auto;
+}
+
+#addTask:hover {
+    background-color: grey;
+}
+
+#todayHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background: green; */
+
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+
+    font-size: 22px;
+    font-weight: 500;
+    /* text-align: center; */
+    /* margin: 20px 0 0 0 0; */
+    /* margin-top: 15px; */
+    border-bottom: 1px rgba(236, 236, 236, 1) solid;
+}
+
+#currentCategoryLabel {
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+    margin: 20px 60px 20px 60px;
+}
+
+#addTask {
+    margin: 20px 60px 20px 60px;
+    font-weight: 900;
+}
+
+#taskFormInput {
+    display: none;
+}
+
+/* input[type="checkbox"] {
+    border-radius: 50%;
+    background-color: pink;
+} */
+
+#div-button {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* #addTaskSubmit-div, #close-Div {
+    margin: 0 auto;
+    width: 50%;
+} */
+
+#taskFormInputOpen {
+    /* display: flex; */
+    /* background: purple; */
+    width: 100%;
+    /* margin: 0 auto; */
+    /* text-align: justify; */
+    text-align: center;
+    border-bottom: 1px rgba(236, 236, 236, 1) solid;
+    padding-bottom: 20px;
+    /* align-items: center; */
+    /* height: 30%; */
+    /* padding: 30px 0 30px 0; */
+    /* vertical-align: middle; */
+    /* margin-top: 100px; */
+}
+
+input#form-title-input, input#form-dueDate-input, input#form-category-input {
+    height: 30px;
+    margin: 20px 0 0 0;
+    border-top: none;
+    border-left: 1px lightgreen solid;
+    border-right: none;
+    border-bottom: 1px lightgreen solid;
+}
+
+/* #div-title {
+    margin: 0 auto;
+} */
+
+.sidebar-default {
+    margin: 4px 15px 0 15px;
+}
+
+#sidebar-data {
+    margin-top: 20px;
+    /* background:yellow; */
+    /* width: 100%; */
+    /* text-align: center; */
+}
+
+#sidebar-categories {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#sidebar-overdue:hover, #sidebar-today:hover, #sidebar-week:hover {
+    background: darkseagreen;
+}
+
+#categoryFormInput {
+    display: none;
+}
+
+#categoryFormInput.open {
+    display: block;
+    text-align: center;
+    /* margin: 10px 0 10px 0; */
+    /* width: 80%; */
+}
+
+#addCategory {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    /* width: 25px; */
+}
+
+input {
+    width: 500px;
+    /* align-items: center; */
+    /* float: right; */
+}
+
+.sidebar-format {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 15px 0 15px;
+}
+
+label {
+    display: inline-block;
+    /* background: orange; */
+    width: 100px;
+}
+
+.category-label-highlight:hover {
+    background: darkseagreen;
+    width: 100%;
+    text-align: left;
+}
+
+.remove-cat-hover:hover {
+    /* display: none; */
+    /* background: orange; */
+    opacity: 100;
+    margin: auto 0;
+}
+
+.remove-cat-hover {
+    opacity: 0;
+}
+
+td.task-dueDates {
+    width: 10%;
+    text-align: right;
+}
+
+td.task-categories {
+    text-align: right;
+    width: 20%
+}
+
+td.checkboxes, td.importance { 
+    /* width: 30px; */
+    width: 5%;
+}
+
+td.task-title {
+    /* width: 600px; */
+    width: 50%;
+    word-break: break-all;
+}
+
+/* 
+.checkbox {
+    width: 10px;
+}
+
+#category-heading {
+    width: 100px;
+} */
+
+#form-new-category {
+    width: 75%;
+    /* margin: 0 10px 0 10px; */
+}
+
+td {
+    border-bottom: 1px rgba(236, 236, 236, 1) solid;
+    /* border-top: 0px rgba(236, 236, 236, 1) solid; */
+    /* border-collapse: collapse; */
+    /* padding-bottom: 20px; */
+    /* padding: 20px; */
+    /* background: blue; */
+    /* padding-top: 10px; */
+    height: 50px;
+    /* width: 100%; */
+    /* margin-bottom: 20px; */
+}
+
+#empty-display {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50px;
+    font-size: 24px;
+}
